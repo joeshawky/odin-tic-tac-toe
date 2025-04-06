@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Tic tac toe</title>
+</head>
+<body>
+    <div class="gameScreen">
+        <div class="playersScore">
+            <span class="userScore">
+                <span class="name1">Player</span>
+                <span class="score1">1</span>
+            </span>
+            <span class="botScore">
+                <span class="name2">Bot</span>
+                <span class="score2">1</span>
+            </span>
+        </div>
+        <div class="boardWrapper">
+            <div class="board">
+                <div class="card" row="0" col="0"></div>
+                <div class="card" row="0" col="1"></div>
+                <div class="card" row="0" col="2"></div>
+                <div class="card" row="1" col="0"></div>
+                <div class="card" row="1" col="1"></div>
+                <div class="card" row="1" col="2"></div>
+                <div class="card" row="2" col="0"></div>
+                <div class="card" row="2" col="1"></div>
+                <div class="card" row="2" col="2"></div>
+            </div>
+        </div>
+        <span class="roundWrapper">
+            <span class="roundName">
+                Round 
+            </span>
+            <span class="roundCount">
+                1
+            </span>
+        </span>
+
+    </div>
+
+    <div class="popup">
+        <div>
+            <span class="winnerAnnouncement"></span>
+            <button class="playGame" onclick="game.start()">
+                Play game
+            </button>
+        </div>
+    </div>
+</body>
+</html>

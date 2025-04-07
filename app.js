@@ -72,10 +72,10 @@ const game = (() => {
         });
     }
 
-    const toggleCards = (cards) => {
+    const toggleCards = (cards, winner) => {
         cards.forEach(([i, j]) => {
             const card = UI.boardElement.querySelector(`[row='${i}'][col='${j}']`)
-            card.style.backgroundColor = "green";
+            card.style.backgroundColor = winner === 'X' ? "green" : "red";
             setTimeout(() => {
                 card.style.backgroundColor = "var(--bg-secondary-color)"
             }, 1000);
@@ -139,7 +139,7 @@ const game = (() => {
         if (!status) return false;
 
 
-        toggleCards(winnerCards);
+        toggleCards(winnerCards, winner);
         updateScores(winner)
 
         if (isMatchOver()) {

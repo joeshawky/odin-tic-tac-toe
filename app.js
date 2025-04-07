@@ -64,7 +64,7 @@ const game = (() => {
     const removeEventHandlers = () => {
         const arr = Array.from(UI.boardElement.children);
         arr.forEach(card => {
-            const handler = handlers.get(card); // retrieve stored function
+            const handler = state.handlers.get(card); // retrieve stored function
             if (handler) {
                 card.removeEventListener('click', handler);
                 state.handlers.delete(card); // clean up after removing

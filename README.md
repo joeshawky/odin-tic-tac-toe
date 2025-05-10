@@ -13,6 +13,11 @@ The game allows the user to play against a basic AI opponent that selects its mo
 - JavaScript modules and functional patterns
 - Game logic implementation (win/draw detection)
 
+## 🔗 Live Demo
+
+[Click here to try the Tic Tac Toe game](https://joeshawky.github.io/odin-tic-tac-toe)
+
+
 ## 📐 Features
 
 - Clean and responsive UI using pure CSS

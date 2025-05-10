@@ -75,9 +75,12 @@ const game = (() => {
     const toggleCards = (cards, winner) => {
         cards.forEach(([i, j]) => {
             const card = UI.boardElement.querySelector(`[row='${i}'][col='${j}']`)
-            card.style.backgroundColor = winner === 'X' ? "green" : "red";
+            const className = winner === 'X' ? "winningBg" : "losingBg";
+
+            card.classList.add(className)
             setTimeout(() => {
-                card.style.backgroundColor = "var(--bg-secondary-color)"
+                card.classList.remove(className);
+                
             }, 1000);
         })
     };

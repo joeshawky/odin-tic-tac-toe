@@ -114,9 +114,19 @@ body {
     font-size: 2rem;
     text-align: center;
     transition: all 0.3s;
-
-    /* background-color: green; */
 }
+
+.winningBg,
+.winningBg:hover {
+    background-color: green !important;
+}
+
+.losingBg,
+.losingBg:hover {
+    background-color: red !important;
+}
+
+
 
 @media (max-width: 720px) {
     .boardWrapper {
